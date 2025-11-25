@@ -46,3 +46,13 @@ public class AgeCalculator {
 
     }
 } 
+
+public class A_PositiveOrNegative {
+    public static void main(String[] args) {
+        /*
+        Írj egy programot, ami bekér egy egész számot (int) Scanner segítségével és eldönti, hogy a kapott szám
+        pozitív, negatív, vagy nulla.
+         */
+
+    }
+}
