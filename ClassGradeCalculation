@@ -1,0 +1,35 @@
+import java.util.Scanner;
+
+public class ClassGradeCalculation {
+
+    public static void main(String[] args) {
+
+        Scanner scanner = new Scanner(System.in);
+
+        // Név bekérése
+        System.out.print("Add meg a neved: ");
+        String name = scanner.nextLine();
+
+        // Matekjegy bekérése
+        System.out.print("Add meg a matek jegyed (1-5): ");
+        int math = scanner.nextInt();
+
+        // Irodalom jegy bekérése
+        System.out.print("Add meg az irodalom jegyed (1-5): ");
+        int literature = scanner.nextInt();
+
+        // Történelem jegy bekérése
+        System.out.print("Add meg a történelem jegyed (1-5): ");
+        int history = scanner.nextInt();
+
+        // Átlag számítása
+        double average = (math + literature + history) / 3.0;
+
+        // Kiírás
+        System.out.println();
+        System.out.println(name);
+        System.out.println("Jegyeinek átlaga: " + average);
+
+        scanner.close();
+    }
+}
