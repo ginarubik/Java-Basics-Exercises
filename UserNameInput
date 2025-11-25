@@ -1,0 +1,20 @@
+import java.util.Scanner;
+
+public class UserNameInput {
+    public static void main(String[] args) {
+
+        // Hogyan tudunk a felhasználótól bekérni adatot?
+        // Létrehozunk egy Scanner objektumot
+        Scanner scanner = new Scanner(System.in);
+
+        // Bekérjük a felhasználó nevét
+        System.out.print("Add meg a neved: ");
+        String name = scanner.nextLine();
+
+        // Kiírjuk a megadott nevet
+        System.out.println("Szia, " + name + "!");
+
+        // Scanner lezárása (nem kötelező, de ajánlott)
+        scanner.close();
+    }
+}
