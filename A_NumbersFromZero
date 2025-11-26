@@ -1,0 +1,13 @@
+public class A_NumbersFromZero {
+    public static void main(String[] args) {
+        /*
+        Írd ki a pozitív egész számokat (nullával kezdve) egészen a max változóban megadott számig.
+        max értéke is legyen kiírva!
+        */
+        int max = 21;
+
+        for (int i = 0; i <= max; i++) {
+            System.out.println(i);
+        }
+    }
+}
