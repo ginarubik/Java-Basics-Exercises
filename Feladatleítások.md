@@ -34,11 +34,9 @@ public class AgeCalculator {
     }
 }
 
-//Hogyan tudunk a felhasználótól bekérni adatot?
-    //Hozzunk létre egy scannert ami bekéri a user nevet es ezt nyomtassuk is ki. 
-    
 
-   public class B_HelloJoe {
+
+    public class B_HelloJoe {
     public static void main(String[] args) {
         /*
         Írasd ki a "Hello Joe" köszönést, ha a konzolról kapott név "Joe", és "Nem vagy Joe" Stringet, ha nem.
