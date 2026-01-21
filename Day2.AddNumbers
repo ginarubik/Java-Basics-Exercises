@@ -1,0 +1,32 @@
+//Day2 feladat - AddNumbers
+//Teljesítési követelmények
+Hozz létre egy Scanner példányt, amivel a konzolról olvashatsz be adatot
+
+//Kérj be két egész számot a felhasználótól
+
+//Írd ki a végrehajtandó műveletet a konzolra (azaz "5 + 12")
+
+//Írd ki a tényleges eredményt is (azaz 17)
+
+
+import java.util.Scanner;
+
+public class AddNumbers {
+
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.print("Adj meg egy egész számot: ");
+        int firstNumber = scanner.nextInt();
+
+        System.out.print("Adj meg egy másik egész számot: ");
+        int secondNumber = scanner.nextInt();
+
+        System.out.println(firstNumber + " + " + secondNumber);
+
+        int result = firstNumber + secondNumber;
+        System.out.println(result);
+
+        scanner.close();
+    }
+}
