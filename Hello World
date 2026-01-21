@@ -1,4 +1,6 @@
-Java program (Hello World)
+// Mi a SOUT?
+//Konzolra írjuk ki a Hello world
+
 public class HelloWorld {
     public static void main(String[] args) {
         System.out.println("Hello World");
@@ -6,7 +8,7 @@ public class HelloWorld {
 }
 
 
-📌 Mit csinál?
+//📌 Mit csinál?
 
 main → a program belépési pontja
 
