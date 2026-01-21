@@ -1,0 +1,15 @@
+Java program (Hello World)
+public class HelloWorld {
+    public static void main(String[] args) {
+        System.out.println("Hello World");
+    }
+}
+
+
+📌 Mit csinál?
+
+main → a program belépési pontja
+
+System.out.println → kiírja a szöveget a konzolra
+
+"Hello World" → a kiírandó szöveg
