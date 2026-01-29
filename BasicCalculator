@@ -1,0 +1,25 @@
+package hu.progmasters.javastart.module_01.day2_muveletek.gyakorlatok;
+
+public class BasicCalculator {
+
+    public static void main(String[] args) {
+
+        // 6 * 3 - 2
+        int result1 = 6 * 3 - 2;
+
+        // 21 - 4 / 3 * 5
+        int result2 = 21 - 4 / 3 * 5;
+
+        // 7 * 7 * 4 / 5 + 6
+        int result3 = 7 * 7 * 4 / 5 + 6;
+
+        System.out.println(result1);
+        System.out.println(result2);
+        System.out.println(result3);
+    }
+}
+
+//Output: 
+//16
+//16
+//45
