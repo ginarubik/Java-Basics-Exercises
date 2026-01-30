@@ -1,0 +1,24 @@
+import java.util.Scanner;
+
+public class Regisztracio {
+    public static void main(String[] args) {
+
+        // Scanner létrehozása a konzolról való beolvasáshoz
+        Scanner scanner = new Scanner(System.in);
+
+        // Email bekérése
+        System.out.print("Add meg az emailcímed: ");
+        String email = scanner.nextLine();
+
+        // Jelszó bekérése
+        System.out.print("Add meg a jelszavad: ");
+        String jelszo = scanner.nextLine();
+
+        // Adatok kiírása
+        System.out.println("A következő adatokkal regisztráltál:");
+        System.out.println("Email: " + email);
+        System.out.println("Jelszó: " + jelszo);
+
+        scanner.close();
+    }
+}
