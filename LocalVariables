@@ -1,0 +1,36 @@
+public class Main {
+    public static void main(String[] args) {
+
+        // Boolean változó
+        boolean b = false;
+        System.out.println(b);   // kiírás: false
+
+        // int változó 2 kezdőértékkel
+        int n = 2;
+
+        // két int egy sorban
+        int i = 3, j = 4;
+
+        // k az i értékét kapja
+        int k = i;
+
+        //  Változó kiírása definiálás előtt – NEM sikerül
+        // System.out.println(x); // fordítási hiba lenne
+
+        // String változók
+        String s = "Hello World";
+        String t = s;
+
+        // Blokk metóduson belül
+        {
+            int x = 0;
+            System.out.println(x); // sikerül (blokkon belül)
+
+            // Blokkon belül kiírjuk a blokk előtt definiált változót
+            System.out.println(n); // sikerül
+        }
+
+        // Blokkon belüli változó kiírása blokkon kívül – NEM sikerül
+        // System.out.println(x); // fordítási hiba
+    }
+}
