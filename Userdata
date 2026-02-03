@@ -1,0 +1,31 @@
+package hu.progmasters.javastart.module_01.day3_strings.gyakorlatok;
+
+import java.util.Scanner;
+
+public class UserData {
+
+    public static void main(String[] args) {
+
+        // Hozz létre egy Scanner példányt
+        Scanner scanner = new Scanner(System.in);
+
+        // Kérd be a felhasználó vezetéknevét
+        System.out.print("Vezetéknév: ");
+        String lastName = scanner.nextLine();
+
+        // Kérd be a keresztnevét
+        System.out.print("Keresztnév: ");
+        String firstName = scanner.nextLine();
+
+        // Kérd be a születési évét
+        System.out.print("Születési év: ");
+        int birthYear = scanner.nextInt();
+        scanner.nextLine(); // enter elnyelése
+
+        // Kérd be a nemét
+        System.out.print("Nem: ");
+        String gender = scanner.nextLine();
+
+        // Számítsd ki az életkorát (aktuális év: 2024)
+        int currentYear = 2024;
+        int age = currentYear - b
