@@ -38,13 +38,13 @@ public class StringType {
         // 8. Feladat: String műveletek
         String text = "Abcde";
 
-        // Hossz kiírása
+        // 9.Hossz kiírása
         System.out.println(text.length()); // -> 5
 
-        // Első és harmadik karakter kiírása
+        // 10.Első és harmadik karakter kiírása
         System.out.println(text.charAt(0) + ", " + text.charAt(2)); // -> A, c
 
-        // Az első három karakter (0–2 index)
+        // 11.Az első három karakter (0–2 index)
         System.out.println(text.substring(0, 3)); // -> Abc
     }
 }
