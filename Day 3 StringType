@@ -1,50 +1,43 @@
+package hu.progmasters.javastart.module_01.day3_strings.gyakorlatok;
+
 public class StringType {
 
     public static void main(String[] args) {
 
-        // 1. Feladat: Definiálj prefix néven egy String változót "Hello " értékkel!
+        // Definiálj prefix néven egy String típusú változót, és add neki értékül, hogy "Hello "!
         String prefix = "Hello ";
 
-        // 2. Feladat: Definiálj name néven egy String változót "John Doe" értékkel!
+        // Definiálj name néven egy String típusú változót, és add neki értékül, hogy "John Doe"!
         String name = "John Doe";
 
-        // 3. Feladat: Hozz létre egy message változót, amely az előző kettőt összefűzi!
+        // Definiálj egy message változót, mely az előző két változó, összefűzve.
         String message = prefix + name;
-        System.out.println(message); // -> Hello John Doe
 
-        // 4. Feladat: Írd felül a message változó értékét úgy, hogy hozzáfűzöd a 444-et!
+        // A message változó értékét írd felül úgy, hogy hozzákapcsolod még a 444 számot
         message = message + 444;
-        System.out.println(message); // -> Hello John Doe444
 
-
-        // 5. Feladat: Logikai változó, hogy message == "Hello John Doe"-e
+        // Hozz létre egy logikai változót, ami tartalmazza azt, hogy a message értéke "Hello John Doe"-e!
         boolean isHelloJohnDoe = message.equals("Hello John Doe");
-        System.out.println(isHelloJohnDoe); // false
 
-        // 6. Feladat: Logikai változó, hogy message == "Hello John Doe444"-e
+        // Hozz létre egy másik logikai változót, ami tartalmazza azt,
+        // hogy a message értéke megegyezik-e a "Hello John Doe444" értékkel!
         boolean isHelloJohnDoe444 = message.equals("Hello John Doe444");
-        System.out.println(isHelloJohnDoe444); // true
 
+        // Konkatenálj össze két üres String-et, és írd ki az értékét! Hány karakter hosszú lesz?
+        String emptyConcat = "" + "";
+        System.out.println(emptyConcat);
+        System.out.println(emptyConcat.length());
 
-        // 7. Feladat: Üres stringek összefűzése
-        String s1 = "";
-        String s2 = "";
-        String result = s1 + s2;
-
-        System.out.println(result);        // -> üres sor
-        System.out.println(result.length()); // -> 0
-
-
-        // 8. Feladat: String műveletek
+        // Írd ki külön sorban, külön utasításokban a következőket:
         String text = "Abcde";
 
-        // 9.Hossz kiírása
-        System.out.println(text.length()); // -> 5
+        // Az "Abcde" String hossza
+        System.out.println(text.length());
 
-        // 10.Első és harmadik karakter kiírása
-        System.out.println(text.charAt(0) + ", " + text.charAt(2)); // -> A, c
+        // Az első és harmadik karaktere (0-tól indexelünk) vesszővel elválasztva
+        System.out.println(text.charAt(0) + "," + text.charAt(2));
 
-        // 11.Az első három karakter (0–2 index)
-        System.out.println(text.substring(0, 3)); // -> Abc
+        // Az elsőtől a harmadik karakterig tartó részlete
+        System.out.println(text.substring(0, 3));
     }
 }
