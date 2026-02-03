@@ -1,0 +1,37 @@
+import java.util.Scanner;
+
+public class SubstringGyakorlat {
+
+    public static void main(String[] args) {
+
+        String startingString = "Fekete bika pata kopog a patika pepita kövén";
+
+        // Írd ki a konzolra startingString változó "fekete " utáni részét
+        // "Fekete " hossza: 7
+        System.out.println(startingString.substring(7));
+
+        // Írd ki a 4-es indexű karaktertől a szöveget
+        System.out.println(startingString.substring(4));
+
+        // Írd ki a 4. karaktertől a szöveget (emberi számozás → index 3)
+        System.out.println(startingString.substring(3));
+
+        // Írd ki a 8. karaktertől a 12. karakterig (4 betű, space nélkül)
+        // index: 7-től 11-ig → substring vége kizáró
+        System.out.println(startingString.substring(7, 11));
+
+        // Írd ki az első és az utolsó szót egybe, szünet nélkül
+        String firstWord = startingString.substring(0, startingString.indexOf(" "));
+        String lastWord = startingString.substring(startingString.lastIndexOf(" ") + 1);
+        System.out.println(firstWord + lastWord);
+
+        // Olvass be a konzolról egy Stringet, és ezt konkatenáld a startingStringhez
+        Scanner scanner = new Scanner(System.in);
+        String input = scanner.nextLine();
+        startingString = startingString + input;
+
+        // Írd ki a konzolra a "patika"-tól egészen az új utolsó karakterig
+        int patikaIndex = startingString.indexOf("patika");
+        System.out.println(startingString.substring(patikaIndex));
+    }
+}
